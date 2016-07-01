@@ -21,3 +21,11 @@
 */
 
 // YOUR CODE HERE
+function isPalindrome (huh){
+  function reverse(){
+    return huh.split("").reverse().join("");
+    return huh
+  }
+  console.log(huh);
+}
+isPalindrome(mom);
