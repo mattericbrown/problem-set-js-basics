@@ -18,11 +18,9 @@ function isPrime(num){
   }
   return num > 1;
 }
-isPrime(100);
-
 function primes(max){
   var primeArray = [];
-  for (var i=max; i > 1; i--){
+  for (var i=1; i <= max; i++){
     isPrime(i);
     if(isPrime(i)===true){
         primeArray.push(i);

@@ -21,11 +21,54 @@
 */
 
 // YOUR CODE HERE
-function isPalindrome (huh){
-  function reverse(){
-    return huh.split("").reverse().join("");
-    return huh
-  }
-  console.log(huh);
+function isPalindrome (n){
+    palindromeForward = n.split('');
+    palindromeInitial = palindromeForward;
+    palindromeReverse = n.split('');
+    reverse = palindromeReverse.reverse();
+    for (var i = 0; i < palindromeInitial.length; i++ ) {
+      if (palindromeForward[i]=== " "){
+        palindromeForward.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeInitial.length; i++ ) {
+      if (palindromeForward[i]=== ","){
+          palindromeForward.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeInitial.length; i++ ) {
+      if (palindromeForward[i]=== "."){
+          palindromeForward.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeInitial.length; i++ ) {
+      if (palindromeForward[i]=== ":"){
+          palindromeForward.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeReverse.length; i++ ) {
+      if (palindromeReverse[i]=== " "){
+        palindromeReverse.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeReverse.length; i++ ) {
+      if (palindromeReverse[i]=== ","){
+          palindromeReverse.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeReverse.length; i++ ) {
+      if (palindromeReverse[i]=== "."){
+          palindromeReverse.splice(i,1);
+      }
+    }
+    for (var i = 0; i < palindromeReverse.length; i++ ) {
+      if (palindromeReverse[i]=== ":"){
+          palindromeReverse.splice(i,1);
+      }
+    }
+    stringForward = palindromeForward.join('');
+    stringBackward = palindromeReverse.join('');
+    forward = stringForward.toLowerCase();
+    backward = stringBackward.toLowerCase();
+    return (forward === backward)
 }
-isPalindrome(mom);
